@@ -8,7 +8,6 @@ $CONSUMER_SECRET = 'yyyyyyyyyy';
 $consumer = new OAuthConsumer($CONSUMER_KEY, $CONSUMER_SECRET, NULL);
 
 // Setup OAuth request based our previous credentials and query
-$user = 'any.user@yourdomain.com';
 $base_feed = 'http://whatever.com/api/get/something';
 $params = array('max-results' => 10);
 $request = OAuthRequest::from_consumer_and_token($consumer, NULL, 'GET', $base_feed, $params);
